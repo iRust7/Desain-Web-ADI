@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GADGED WORLD STORE</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#" class="nav__logo" >WORLD GADGED</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="saran.html">Saran</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="intro">
+            <h1>Tentukan pilihanmu</h1>
+            <p class="tagline">Temukan GADGET Pilihan Anda.</p>
+            <button onclick="location.href='produk.html'" class="shop-now">Belanja Sekarang</button><br>
+            <h2>Produk Terlaris Kami</h2>
+        </div>
+        <div class="produk-container">
+            <div class="produk-item">
+                <h2>HP Wired Virtual 7.1-Channel Gaming Headset</h2>
+                <img src="gambar/OIP (1).jpeg" alt="Produk 1">
+                <p class="price">Rp 100.000</p>
+                <p>Deskripsi produk 1</p>
+                <button class="btn btn-primary detail-btn" data-toggle="modal" data-target="#productModal" data-title="HP Wired Virtual 7.1-Channel Gaming Headset" data-price="100000" data-description="Deskripsi produk 1" data-image="gambar/OIP (1).jpeg">Detail</button>
+            </div>
+            <div class="produk-item">
+                <h2>Redragon M801 Gaming Mouse RGB MMO 9 Programmable</h2>
+                <img src="gambar/61QXVSF6bLL._AC_SL1500_.jpg" alt="Produk 2">
+                <p class="price">Rp 200.000</p>
+                <p>Deskripsi produk 2</p>
+                <button class="btn btn-primary detail-btn" data-toggle="modal" data-target="#productModal" data-title="Redragon M801 Gaming Mouse" data-price="200000" data-description="Deskripsi produk 2" data-image="gambar/61QXVSF6bLL._AC_SL1500_.jpg">Detail</button>
+            </div>
+            <div class="produk-item">
+                <h2>World Map Gaming Mouse Pad Extended Size 80 x 30 CM</h2>
+                <img src="gambar/OIP (2).jpeg" alt="Produk 3">
+                <p class="price">Rp 300.000</p>
+                <p>Deskripsi produk 3</p>
+                <button class="btn btn-primary detail-btn" data-toggle="modal" data-target="#productModal" data-title="World Map Gaming Mouse Pad" data-price="300000" data-description="Deskripsi produk 3" data-image="gambar/OIP (2).jpeg">Detail</button>
+            </div>,
+            <div class="article-container">
+                <h2>TUTORIAL MELAKUKAN PESANAN</h2>
+                <article>
+                    <h3>cara membeli di WorldGadged Store </h3>
+                    <p>berikut adalah langkah-langkahnya: </langkah-langkahnya></p>
+                    <ul>
+                        <li>Buka Halaman Produk: Klik menu "Produk" pada navigasi atau tombol "Belanja Sekarang" di halaman beranda untuk melihat daftar produk yang tersedia.</li>
+                        <li>Lihat Detail Produk: Di halaman produk, Anda akan melihat daftar produk dengan tombol "Detail". Klik tombol "Detail" di produk yang Anda minati untuk membuka modal popup dengan informasi lengkap.</li>
+                        <li>Pilih 'Beli Sekarang': Di dalam popup modal, klik tombol "Beli Sekarang" untuk melakukan pemesanan.</li>
+                    </ul>
+                </article>
+                <h2>ARTIKEL TENTANG GADGED</h2>
+                <article>
+                    <h3>5 Gadget Terbaik untuk Pelajar</h3>
+                    <p>Pendidikan di era digital menuntut pelajar untuk memiliki gadget yang mendukung pembelajaran. Berikut adalah 5 gadget terbaik yang bisa membantu meningkatkan produktivitas pelajar:</p>
+                    <ul>
+                        <li>1. Laptop Ringan - Mudah dibawa ke mana-mana dan mendukung berbagai aplikasi pembelajaran.</li>
+                        <li>2. Tablet - Ideal untuk membaca e-book dan membuat catatan.</li>
+                        <li>3. Smartwatch - Membantu memantau aktivitas dan mengingatkan jadwal belajar.</li>
+                        <li>4. Power Bank - Penting untuk menjaga gadget tetap terisi saat beraktivitas di luar.</li>
+                        <li>5. Headset - Membantu fokus saat belajar dengan mengurangi gangguan suara.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 WORLD GADGET STORE. Semua hak dilindungi.</p>
+    </footer>
+
+    <!-- Modal untuk Detail Produk -->
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Detail Produk</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="" class="img-fluid" alt="Gambar Produk">
+                        </div>
+                        <div class="col-md-6">
+                            <h5 id="productTitle"></h5>
+                            <p id="productDescription"></p>
+                            <p id="productPrice"></p>
+                            <button class="btn btn-primary" id="buyButton">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Mengisi modal dengan data produk
+        $('.detail-btn').on('click', function() {
+            var title = $(this).data('title');
+            var price = $(this).data('price');
+            var description = $(this).data('description');
+            var image = $(this).data('image');
+            
+            $('#productTitle').text(title);
+            $('#productPrice').text('Harga: Rp ' + price);
+            $('#productDescription').text(description);
+            $('#productModal img').attr('src', image);
+        });
+    </script>
+    
+</body>
+</html>
