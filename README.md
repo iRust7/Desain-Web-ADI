@@ -22,7 +22,6 @@ Proyek ini mencakup pembuatan website dengan berbagai halaman dan desain menggun
 
 - HTML
 - CSS
-- JavaScript
 
 ## Preview Website
 
